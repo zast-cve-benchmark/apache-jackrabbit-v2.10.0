@@ -1,0 +1,104 @@
+Release Notes -- Apache Jackrabbit -- Version 2.10.0
+
+Introduction
+------------
+
+This is Apache Jackrabbit(TM) 2.10, a fully compliant implementation of the
+Content Repository for Java(TM) Technology API, version 2.0 (JCR 2.0) as
+specified in the Java Specification Request 283 (JSR 283).
+
+Apache Jackrabbit 2.10 is an incremental feature release based on and
+compatible with earlier stable Jackrabbit 2.x releases. Jackrabbit 2.10.x
+releases are considered stable and targeted for production use.
+
+Changes since Jackrabbit 2.8.0
+------------------------------
+
+Improvements
+
+  [JCR-3803] Local cache contention lead to performance degradation
+  [JCR-3804] [jackrabbit-aws] Allow http communication to S3
+  [JCR-3810] StreamWrapper can attempt to reset other types of InputStreams
+  [JCR-3815] Local Cache Purge Cause Performance Issues
+  [JCR-3817] [jackrabbit-aws-ext] Performance of operation degrades while running DS GC
+  [JCR-3818] Use SimpleFSDirectory by default
+  [JCR-3825] Use RepositoryFactory for first hops
+  [JCR-3826] AbstractPrincipalProvider cachesize is not configurable
+  [JCR-3838] [aws-ext] Proactive & Asynchronous caching of binary when its metadata is accessed from S3
+  [JCR-3842] [jackrabbit-aws-ext] Support encryption in S3Datastore
+  [JCR-3843] [jackrabbit-aws-ext] Support S3 in Franfurt Datacenter
+  [JCR-3844] JcrRemotingServlet does not log full stacktrace
+  [JCR-3845] Have AuthorizableQueryManager Support Specifying Sort Ignore Case Mode
+  [JCR-3852] [jackrabbit-aws-ext] Refactor code to open S3 service & consolidate testcases
+  [JCR-3855] Make TimeSeriesAverage public
+  [JCR-3861] Update Oak dependency in webapp
+
+Bug fixes
+
+  [JCR-3274] jackrabbit-standalone-2.4.0.jar Populate does not work
+  [JCR-3805] LocalCache doesn't build up properly in JDK 7.
+  [JCR-3809] ConnectionHelper swallows exception when it fails to reset binary streams after a failed SQL statement execution
+  [JCR-3816] [aws-ext]S3DS not able update lastModified of record > 5GB
+  [JCR-3821] SeededSecureRandom thread can prevent Jackrabbit from shutting down
+  [JCR-3839] [aws-ext] Regression to JCR-3734 Slow local cache built-up time
+  [JCR-3840] NodeTypeDefDiff does not take same-name child type definitions into account
+  [JCR-3850] RepositoryStartupServlet constructs FileStore incorrectly
+  [JCR-3857] [jackrabbit-aws-ext] Correct typo in S3Constants
+  [JCR-3862] [FileDataStore]: deleteRecord leaves the parent directories empty
+
+Tasks
+  [JCR-3830] Allow for privilege discovery in jcr-server
+  [JCR-3833] Compatibility with Java 8
+
+Sub-tasks
+
+  [JCR-2113] JSR 283 Access Control Management (JCR-2003 - JCR2SPI / SPI: Add support for JCR 2.0)
+
+In addition to the above-mentioned changes, this release contains
+all the changes included up to the Apache Jackrabbit 2.8.0 release.
+
+For more detailed information about all the changes in this and other
+Jackrabbit releases, please see the Jackrabbit issue tracker at
+
+    https://issues.apache.org/jira/browse/JCR
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.txt file for instructions on how to build this release.
+
+The source archive is accompanied by SHA1 and MD5 checksums and a PGP
+signature that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+https://svn.apache.org/repos/asf/jackrabbit/dist/KEYS.
+
+About Apache Jackrabbit
+-----------------------
+
+Apache Jackrabbit is a fully conforming implementation of the Content
+Repository for Java Technology API (JCR). A content repository is a
+hierarchical content store with support for structured and unstructured
+content, full text search, versioning, transactions, observation, and
+more.
+
+For more information, visit http://jackrabbit.apache.org/
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 140 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 3,800+ contributors.
+
+For more information, visit http://www.apache.org/
+
+Trademarks
+----------
+
+Apache Jackrabbit, Jackrabbit, Apache, the Apache feather logo, and the Apache
+Jackrabbit project logo are trademarks of The Apache Software Foundation.
